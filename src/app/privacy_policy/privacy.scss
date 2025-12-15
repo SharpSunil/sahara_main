@@ -1,0 +1,38 @@
+.privacy{
+    padding: 0px 20px;
+//   background: var(--grey);
+  height: 500px;
+  .privacy-container{
+    display: flex;
+    
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      width: 100% !important;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+  }
+}
+.privacy1{
+    display: flex;
+    padding:0px 0px 50px 0px;
+      background: var(--grey);
+    .privacy-container1{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 20px 100PX 20PX;
+        ul li{
+            padding:10px 0px 5px 0px;
+            list-style-type: none;
+        }
+        p{
+          a{
+            color:var(--accent);
+          }
+        }
+    }
+}

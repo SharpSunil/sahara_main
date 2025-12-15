@@ -1,0 +1,32 @@
+.black-border {
+    background: url("../../../../public/blackBorder.svg") top center no-repeat;
+    background-size: cover;
+    height: 100px;
+    z-index: 4;
+    position: relative;
+  
+    &.flip {  
+      transform: rotateY(180deg);
+    }
+  
+    &.white {
+      background: url("../../../../public/whiteBorder.svg") top center no-repeat !important;
+    }
+  }
+  
+  .grey-border {
+    background: url("../../../../public/greyBorder.svg") top center no-repeat;
+    background-size: cover;
+    height: 100px;
+    z-index: 4;
+    position: relative;
+  
+    &.lightgrey {
+      background: url("../../../../public/lightGreyBorder.svg") top center
+        no-repeat !important;
+    }
+  
+    &.flip {
+      transform: rotateY(180deg);
+    }
+  }

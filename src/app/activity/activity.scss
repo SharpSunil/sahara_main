@@ -1,0 +1,179 @@
+.page-top {
+  height: 400px;
+  background: url("https://odysseymagazine.com/wp-content/uploads/2024/05/1_morning-desert-safari-in-dubai.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  h1 {
+    font-size: 100px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.8);
+    font-family: sans-serif;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 300px;
+    width: 100%;
+    background: linear-gradient(transparent, var(--black));
+  }
+}
+
+.activitymain {
+  min-height: 500px;
+  width: 100%;
+  margin: 100px 0px;
+  background: url("../../../public/tyre_bike.gif");
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+
+  &.paintBallBg {
+    background: url("../../../public/ball.gif");
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+  }
+
+  .activitymain-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+
+    .left {
+      width: 50%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .img-box {
+        width: 90%;
+        aspect-ratio: 4/4;
+        // height: 100%;
+        background: url("https://odysseymagazine.com/wp-content/uploads/2024/05/1_morning-desert-safari-in-dubai.jpg")
+          center center no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+      }
+    }
+
+    .right {
+      width: 50%;
+      height: 200%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px 0px;
+
+      h2 {
+        font-size: clamp(1.6rem, 5vw, 2rem);
+      }
+
+      .key-value {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid var(--grey);
+        padding: 5px;
+        text-transform: capitalize;
+        gap: 0px;
+        &:last-child {
+          border-bottom: none;
+        }
+
+        &:hover {
+          background: var(--grey);
+        }
+
+        .key {
+          font-weight: bold;
+          width: 150px;
+        }
+        .value {
+          width: 100%;
+          color: var(--accent);
+        }
+      }
+    }
+  }
+}
+
+.activityDescription {
+  min-height: 500px;
+  background: var(--grey);
+  margin: 0px100px 0px;
+}
+
+@media only screen and (max-width: 800px) {
+  .page-top {
+    h1 {
+      font-size: 80px;
+    }
+  }
+  .activitymain {
+    .activitymain-container {
+      flex-direction: column;
+      padding: 0px 20px;
+
+      .left {
+        width: 100%;
+        aspect-ratio: 4/3;
+      }
+      .right {
+        width: 100%;
+
+        h2 {
+          width: 100%;
+          text-align: center;
+        }
+
+        .button_class {
+          width: 100%;
+          display: flex;
+          place-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .page-top {
+    h1 {
+      font-size: 50px;
+    }
+  }
+}
+
+#animatedsection {
+  &.light {
+    .activitymain {
+      min-height: 500px;
+      width: 100%;
+      margin: 100px 0px;
+      background: url("../../../public/White\ Tires.gif") !important;
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+      background-size: contain !important;
+
+      &.paintBallBg {
+        background: url("../../../public/White\ Paint.gif") !important;
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+      }
+    }
+  }
+}

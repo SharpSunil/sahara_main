@@ -1,0 +1,225 @@
+.contact1 {
+  padding: 0px 20px;
+  background: var(--grey);
+  height: 500px;
+
+  .contact-container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      width: 100% !important;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    p {
+      width: 100% !important;
+      text-align: center;
+      max-width: 65ch;
+    }
+  }
+}
+.contact2 {
+  padding: 50px 20px;
+  height: 800px;
+
+  .contact-container2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 100px 0px;
+
+    .left {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+
+      h2 {
+        width: 100%;
+        font-size: 2rem;
+      }
+
+      p {
+        width: 100%;
+      }
+
+      .icon {
+        aspect-ratio: 1;
+        height: 40px;
+        background: var(--accent);
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        svg {
+          fill: white;
+        }
+      }
+
+      .contact-details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .icons-box {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+      }
+      .line {
+        width: 100%;
+        height: 1px;
+        background: var(--grey);
+      }
+      .social {
+        display: flex;
+        gap: 10px;
+      }
+    }
+
+    .right {
+      width: 50%;
+      height: 100%;
+      padding: 90px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      form {
+        background: var(--grey);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        justify-content: center;
+        width: 400px;
+        padding: 20px;
+        border-radius: 10px;
+        .row {
+          display: flex;
+          gap: 20px;
+          width: 100%;
+        }
+
+        label {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 2px;
+
+          p {
+            font-size: 0.85rem;
+            padding: 0px 0px 0px 6px;
+          }
+          input,
+          textarea {
+            width: 100%;
+            padding: 10px;
+            background: transparent;
+            outline: none;
+            border: 1px solid var(--text);
+            border-radius: 5px;
+
+            &:focus {
+              border: 1px solid var(--accentDark);
+            }
+            &.err {
+              border: 1px solid var(--accent) !important;
+              box-shadow: 0px 0px 10px var(--accent) !important;
+            }
+          }
+          textarea {
+            height: 100px;
+          }
+          .error {
+            color: red;
+            font-size: 0.75rem;
+            padding: 0px 0px 0px 6px;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.map {
+  height: 500px;
+  background: var(--grey);
+
+  .map-container {
+    position: relative;
+    padding: 50px 20px 0px 20px;
+
+    .mapbox {
+      width: 100%;
+      height: 300px;
+      background: red;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .contact1 {
+    .contact-container1 {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+  .contact2 {
+    padding: 0px 20px 33px 20px;
+    height: fit-content;
+
+    .contact-container2 {
+      flex-direction: column !important;
+
+      .left {
+        width: 100% !important;
+        justify-content: center !important;
+        h2,
+        p.para {
+          text-align: center !important;
+        }
+
+        h2 {
+          font-size: 1.8rem;
+        }
+
+        .contact-details {
+          align-items: center !important;
+          .icons-box {
+            width: 350px !important;
+          }
+        }
+        .social {
+          justify-content: center;
+        }
+      }
+
+      .right {
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 33px 0px;
+      }
+    }
+  }
+}
