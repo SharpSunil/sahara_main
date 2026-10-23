@@ -43,7 +43,7 @@ const ContactForm = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        `${process.env.NEXT_PUBLIC_API_URL}/contact/addContact`,
+        `${process.env.NEXT_PUBLIC_API_URL}contact/addContact`,
         formData
       );
       if (response.status === 200) {
